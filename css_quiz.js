@@ -29,7 +29,7 @@ answer12.addEventListener("click",function(){
         localStorage.setItem("userAnswerCss",JSON.stringify(userAnswer));
         userAnswerVlaue[0]=(Number(answer12.value));
         localStorage.setItem("userAnswerValueCss",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[0]=true;
+        isAnswerToF[0]=false;
         localStorage.setItem("isAnswerToFCss",JSON.stringify(isAnswerToF));
         flag1=1;
     }
@@ -42,7 +42,7 @@ answer13.addEventListener("click",function(){
         localStorage.setItem("userAnswerCss",JSON.stringify(userAnswer));
         userAnswerVlaue[0]=(Number(answer13.value));
         localStorage.setItem("userAnswerValueCss",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[0]=false;
+        isAnswerToF[0]=true;
         localStorage.setItem("isAnswerToFCss",JSON.stringify(isAnswerToF));
         flag1=1;
     }
@@ -157,7 +157,7 @@ answer32.addEventListener("click",function(){
         localStorage.setItem("userAnswerCss",JSON.stringify(userAnswer));
         userAnswerVlaue[2]=(Number(answer32.value));
         localStorage.setItem("userAnswerValueCss",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[2]=false;
+        isAnswerToF[2]=true;
         localStorage.setItem("isAnswerToFCss",JSON.stringify(isAnswerToF));
         flag3=1;
     }
@@ -179,7 +179,7 @@ answer34.addEventListener("click",function(){
         localStorage.setItem("userAnswerCss",JSON.stringify(userAnswer));
         userAnswerVlaue[2]=(Number(answer34.value));
         localStorage.setItem("userAnswerValueCss",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[2]=true;
+        isAnswerToF[2]=false;
         localStorage.setItem("isAnswerToFCss",JSON.stringify(isAnswerToF));
         flag3=1;
     }
@@ -205,7 +205,7 @@ answer41.addEventListener("click",function(){
         localStorage.setItem("userAnswerCss",JSON.stringify(userAnswer));
         userAnswerVlaue[3]=(Number(answer41.value));
         localStorage.setItem("userAnswerValueCss",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[3]=false;
+        isAnswerToF[3]=true;
         localStorage.setItem("isAnswerToFCss",JSON.stringify(isAnswerToF));
         flag4=1;
     }
@@ -238,7 +238,7 @@ answer44.addEventListener("click",function(){
         localStorage.setItem("userAnswerCss",JSON.stringify(userAnswer));
         userAnswerVlaue[3]=(Number(answer44.value));
         localStorage.setItem("userAnswerValueCss",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[3]=true;
+        isAnswerToF[3]=false;
         localStorage.setItem("isAnswerToFCss",JSON.stringify(isAnswerToF));
         flag4=1;
     }
@@ -264,7 +264,7 @@ answer51.addEventListener("click",function(){
         localStorage.setItem("userAnswerCss",JSON.stringify(userAnswer));
         userAnswerVlaue[4]=(Number(answer51.value));
         localStorage.setItem("userAnswerValueCss",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[4]=true;
+        isAnswerToF[4]=false;
         localStorage.setItem("isAnswerToFCss",JSON.stringify(isAnswerToF));
         flag5=1;
     }
@@ -297,7 +297,7 @@ answer54.addEventListener("click",function(){
         localStorage.setItem("userAnswerCss",JSON.stringify(userAnswer));
         userAnswerVlaue[4]=(Number(answer54.value));
         localStorage.setItem("userAnswerValueCss",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[4]=false;
+        isAnswerToF[4]=true;
         localStorage.setItem("isAnswerToFCss",JSON.stringify(isAnswerToF));
         flag5=1;
     }
@@ -382,7 +382,7 @@ answer71.addEventListener("click",function(){
         localStorage.setItem("userAnswerCss",JSON.stringify(userAnswer));
         userAnswerVlaue[6]=(Number(answer71.value));
         localStorage.setItem("userAnswerValueCss",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[6]=false;
+        isAnswerToF[6]=true;
         localStorage.setItem("isAnswerToFCss",JSON.stringify(isAnswerToF));
         flag7=1;
     }
@@ -404,7 +404,7 @@ answer73.addEventListener("click",function(){
         localStorage.setItem("userAnswerCss",JSON.stringify(userAnswer));
         userAnswerVlaue[6]=(Number(answer73.value));
         localStorage.setItem("userAnswerValueCss",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[6]=true;
+        isAnswerToF[6]=false;
         localStorage.setItem("isAnswerToFCss",JSON.stringify(isAnswerToF));
         flag7=1;
     }
@@ -572,7 +572,7 @@ answer102.addEventListener("click",function(){
         localStorage.setItem("userAnswerCss",JSON.stringify(userAnswer));
         userAnswerVlaue[9]=(Number(answer102.value));
         localStorage.setItem("userAnswerValueCss",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[9]=true;
+        isAnswerToF[9]=false;
         localStorage.setItem("isAnswerToFCss",JSON.stringify(isAnswerToF));
         flag10=1;
     }
@@ -583,7 +583,7 @@ answer103.addEventListener("click",function(){
         localStorage.setItem("userAnswerCss",JSON.stringify(userAnswer));
         userAnswerVlaue[9]=(Number(answer103.value));
         localStorage.setItem("userAnswerValueCss",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[9]=false;
+        isAnswerToF[9]=true;
         localStorage.setItem("isAnswerToFCss",JSON.stringify(isAnswerToF));
         flag10=1;
     }
@@ -601,8 +601,7 @@ answer104.addEventListener("click",function(){
 })
 nextBtn10.addEventListener("click",function(){
     if(flag10==1){
-        // document.getElementById("question10").style.display="none";
-        // document.getElementById("question10").style.display="block";
+        window.location.href="./result.html"
     }
 })
 function startTimer(duration, display) {
@@ -616,18 +615,24 @@ function startTimer(duration, display) {
 
         display.textContent = minutes + ":" + seconds;
 
-        if (--timer < 0) {
-            timer = duration;
+        if (--timer == 0) {
+            let index=userAnswer.length;
+            for(let i=index;i<10;i++){
+                userAnswer[i]=""
+                localStorage.setItem("userAnswerCss",JSON.stringify(userAnswer));
+                userAnswerVlaue[i]=null;
+                localStorage.setItem("userAnswerValueCss",JSON.stringify(userAnswerVlaue));
+                isAnswerToF[i]=false;
+                localStorage.setItem("isAnswerToFCss",JSON.stringify(isAnswerToF));
+            }
+            window.location.href=("./result.html");
         }
-        else if(timer === 0) {
-            stopInterval()
-          }
+       
     }, 1000);
-   
 }
 
 window.onload = function () {
     var fiveMinutes = 60 * 5,
         display = document.querySelector('#time');
     startTimer(fiveMinutes, display);
-}
+};
