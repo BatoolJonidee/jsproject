@@ -16,7 +16,7 @@ answer11.addEventListener("click",function(){
         localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
         userAnswerVlaue[0]=(Number(answer11.value));
         localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[0]=false;
+        isAnswerToF[0]=true;
         localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
         flag1=1;
     }
@@ -30,7 +30,7 @@ answer12.addEventListener("click",function(){
         localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
         userAnswerVlaue[0]=(Number(answer12.value));
         localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[0]=true;
+        isAnswerToF[0]=false;
         localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
         flag1=1;
     }
@@ -170,7 +170,7 @@ answer33.addEventListener("click",function(){
         localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
         userAnswerVlaue[2]=(Number(answer33.value));
         localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[2]=false;
+        isAnswerToF[2]=true;
         localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
         flag3=1;
     }
@@ -181,7 +181,7 @@ answer34.addEventListener("click",function(){
         localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
         userAnswerVlaue[2]=(Number(answer34.value));
         localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[2]=true;
+        isAnswerToF[2]=false;
         localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
         flag3=1;
     }
@@ -207,7 +207,7 @@ answer41.addEventListener("click",function(){
         localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
         userAnswerVlaue[3]=(Number(answer41.value));
         localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[3]=false;
+        isAnswerToF[3]=true;
         localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
         flag4=1;
     }
@@ -240,7 +240,7 @@ answer44.addEventListener("click",function(){
         localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
         userAnswerVlaue[3]=(Number(answer44.value));
         localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[3]=true;
+        isAnswerToF[3]=false;
         localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
         flag4=1;
     }
@@ -266,7 +266,7 @@ answer51.addEventListener("click",function(){
         localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
         userAnswerVlaue[4]=(Number(answer51.value));
         localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[4]=true;
+        isAnswerToF[4]=false;
         localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
         flag5=1;
     }
@@ -299,8 +299,8 @@ answer54.addEventListener("click",function(){
         localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
         userAnswerVlaue[4]=(Number(answer54.value));
         localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[4]=false;
-        localStorage.setItem("isAnswerToHtml",JSON.stringify(isAnswerToF));
+        isAnswerToF[4]=true;
+        localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
         flag5=1;
     }
 })
@@ -325,7 +325,7 @@ answer61.addEventListener("click",function(){
         localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
         userAnswerVlaue[5]=(Number(answer61.value));
         localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[5]=true;
+        isAnswerToF[5]=false;
         localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
         flag6=1;
     }
@@ -336,7 +336,7 @@ answer62.addEventListener("click",function(){
         localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
         userAnswerVlaue[5]=(Number(answer62.value));
         localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[5]=false;
+        isAnswerToF[5]=true;
         localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
         flag6=1;
     }
@@ -384,7 +384,7 @@ answer71.addEventListener("click",function(){
         localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
         userAnswerVlaue[6]=(Number(answer71.value));
         localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[6]=false;
+        isAnswerToF[6]=true;
         localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
         flag7=1;
     }
@@ -406,7 +406,7 @@ answer73.addEventListener("click",function(){
         localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
         userAnswerVlaue[6]=(Number(answer73.value));
         localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
-        isAnswerToF[6]=true;
+        isAnswerToF[6]=false;
         localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
         flag7=1;
     }
@@ -454,7 +454,7 @@ answer81.addEventListener("click",function(){
          localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
          userAnswerVlaue[7]=(Number(answer82.value));
          localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
-         isAnswerToF[7]=true;
+         isAnswerToF[7]=false;
          localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
          flag8=1;
      }
@@ -476,7 +476,7 @@ answer81.addEventListener("click",function(){
          localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
          userAnswerVlaue[7]=(Number(answer84.value));
          localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
-         isAnswerToF[7]=false;
+         isAnswerToF[7]=true;
          localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
          flag8=1;
      }
@@ -514,7 +514,7 @@ answer81.addEventListener("click",function(){
          localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
          userAnswerVlaue[8]=(Number(answer92.value));
          localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
-         isAnswerToF[8]=false;
+         isAnswerToF[8]=true;
          localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
          flag9=1;
      }
@@ -536,7 +536,7 @@ answer81.addEventListener("click",function(){
          localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
          userAnswerVlaue[8]=(Number(answer94.value));
          localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
-         isAnswerToF[8]=true;
+         isAnswerToF[8]=false;
          localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
          flag9=1;
      }
@@ -574,7 +574,7 @@ answer81.addEventListener("click",function(){
          localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
          userAnswerVlaue[9]=(Number(answer102.value));
          localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
-         isAnswerToF[9]=true;
+         isAnswerToF[9]=false;
          localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
          flag10=1;
      }
@@ -585,7 +585,7 @@ answer81.addEventListener("click",function(){
          localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
          userAnswerVlaue[9]=(Number(answer103.value));
          localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
-         isAnswerToF[9]=false;
+         isAnswerToF[9]=true;
          localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
          flag10=1;
      }
@@ -603,8 +603,8 @@ answer81.addEventListener("click",function(){
  })
  nextBtn10.addEventListener("click",function(){
     if(flag10==1){
-         // document.getElementById("question10").style.display="none";
-         // document.getElementById("question10").style.display="block";
+        clearTimeout();
+         window.location.href="./result.html";
      }
  })
 function startTimer(duration, display) {
@@ -618,12 +618,19 @@ function startTimer(duration, display) {
 
         display.textContent = minutes + ":" + seconds;
 
-        if (--timer < 0) {
-            timer = duration;
+        if (--timer == 0) {
+            let index=userAnswer.length;
+            for(let i=index;i<10;i++){
+                userAnswer[i]=""
+                localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
+                userAnswerVlaue[i]=null;
+                localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
+                isAnswerToF[i]=false;
+                localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
+            }
+            window.location.href=("./result.html");
         }
-        else{
-            
-        }
+       
     }, 1000);
 }
 
