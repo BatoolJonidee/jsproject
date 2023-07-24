@@ -11,15 +11,15 @@ let Quseti = 0 ;
 let trueAndFalse=[];
 let coluum=[];
 if(topiic=="HTML"){
-     trueAndFalse = JSON.parse(localStorage.getItem("isAnswerToFHtml"));
-     coluum =  JSON.parse(localStorage.getItem("userAnswerHtml"));
+    trueAndFalse = JSON.parse(localStorage.getItem("isAnswerToFHtml"));
+    coluum =  JSON.parse(localStorage.getItem("userAnswerHtml"));
 }else if(topiic=="CSS"){
-     trueAndFalse = JSON.parse(localStorage.getItem("isAnswerToFCss"));
-     coluum =  JSON.parse(localStorage.getItem("userAnswerCss"));
+    trueAndFalse = JSON.parse(localStorage.getItem("isAnswerToFCss"));
+    coluum =  JSON.parse(localStorage.getItem("userAnswerCss"));
 }
 else{
-     trueAndFalse = JSON.parse(localStorage.getItem("isAnswerToFJs"));
-     coluum =  JSON.parse(localStorage.getItem("userAnswerJs"));
+    trueAndFalse = JSON.parse(localStorage.getItem("isAnswerToFJs"));
+    coluum =  JSON.parse(localStorage.getItem("userAnswerJs"));
 }
 
 

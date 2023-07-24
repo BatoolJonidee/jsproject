@@ -602,8 +602,8 @@ answer104.addEventListener("click",function(){
 })
 nextBtn10.addEventListener("click",function(){
     if(flag10==1){
-        // document.getElementById("question10").style.display="none";
-        // document.getElementById("question10").style.display="block";
+        clearTimeout();
+        window.location.href="./result.html";
     }
 })
 function startTimer(duration, display) {
@@ -617,20 +617,25 @@ function startTimer(duration, display) {
 
         display.textContent = minutes + ":" + seconds;
 
-        if (--timer < 0) {
-            timer = duration;
-        }
-        else{
-           
-        }
+        if (--timer == 0) {
+            let index=userAnswer.length;
+            for(let i=index;i<10;i++){
+                userAnswer[i]=""
+                localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
+                userAnswerVlaue[i]=null;
+                localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
+                isAnswerToF[i]=false;
+                localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
+            }
+            window.location.href=("./result.html");}
     }, 1000);
 }
 
 window.onload = function () {
-    var fiveMinutes = 60 * 1,
+    var fiveMinutes = 60 * 5,
         display = document.querySelector('#time');
     startTimer(fiveMinutes, display);
 }
-setTimeout= function(end){
-   alert("end")
-}
+// setTimeout= function(end){
+//    alert("end")
+// }
