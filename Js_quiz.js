@@ -620,12 +620,12 @@ function startTimer(duration, display) {
         if (--timer == 0) {
             let index=userAnswer.length;
             for(let i=index;i<10;i++){
-                userAnswer[i]=""
-                localStorage.setItem("userAnswerHtml",JSON.stringify(userAnswer));
+                userAnswer[i]="";
+                localStorage.setItem("userAnswerJs",JSON.stringify(userAnswer));
                 userAnswerVlaue[i]=null;
-                localStorage.setItem("userAnswerValueHtml",JSON.stringify(userAnswerVlaue));
+                localStorage.setItem("userAnswerValueJs",JSON.stringify(userAnswerVlaue));
                 isAnswerToF[i]=false;
-                localStorage.setItem("isAnswerToFHtml",JSON.stringify(isAnswerToF));
+                localStorage.setItem("isAnswerToFJs",JSON.stringify(isAnswerToF));
             }
             window.location.href=("./result.html");}
     }, 1000);
