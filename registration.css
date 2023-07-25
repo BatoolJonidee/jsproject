@@ -102,10 +102,9 @@ html {
     text-align: center;
     font-size: 20px;
     padding: 10px;
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-bottom: 8%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     transition: all 0.5s;
     /* cursor: pointer; */
   
@@ -160,16 +159,22 @@ html {
   form select:focus {
     border-color: #888;
   }
-  
-  form option {
-    /* background-color: #fff;
-    color: #000; */
-  }
-  
   form option:hover {
     background-color: #f5f5f5;
   }
   
+  .singInP{
+    font-size: 16px;
+    color: rgb(0, 0, 80);
+    display: block;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+  .singInP a:hover{
+    font-size: 18px;
+    color: black;
+    transition: .5s;
+  }
   @media (min-width:850px) and (max-width:1100px){
     .form-img{
       align-items: center;
@@ -192,6 +197,9 @@ html {
     .sign-up-img img{
       width: 70%;
       
+  }
+  .singInP{
+    font-size: 16px;
   }
 }
 @media (min-width:470px) and (max-width:849.9px) {
@@ -218,9 +226,7 @@ html {
   #requiredPosition{
     margin-top: 3%;
   }
-  form #buttonID{
-    margin-bottom: 3%;
-  }
+
 }
 @media (max-width:469.9px){
   .form-img{
@@ -247,8 +253,11 @@ html {
     margin-top: 3%;
   }
   form #buttonID{
-    margin-bottom: 3%;
-    width:60%;
-    margin-left: 20%;
+    /* margin-bottom: 3%; */
+    width:80%;
+    margin-left: 10%;
+  }
+  .singInP{
+    font-size: 14px;
   }
 }

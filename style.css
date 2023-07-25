@@ -32,6 +32,7 @@ html {
   }
   .secondP{
     color:rgb(71, 71, 214);
+    /* font-size: 20px; */
   }
   @keyframes animateBackground {
     0% {
@@ -49,7 +50,7 @@ header{
     /* border: 2px solid black; */
     display: flex;
     justify-content: space-around;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
 }
 
 .welcome-div1{
@@ -58,11 +59,11 @@ header{
     text-align: left;
     font-size: 35px;
 }
-.ppp{
+.singInP{
   font-size: 24px;
   color: rgb(0, 0, 80);
 }
-.ppp:hover{
+.singInP:hover{
   font-size: 26px;
   color: black;
   transition: .5s;
